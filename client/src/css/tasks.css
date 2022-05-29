@@ -1,0 +1,108 @@
+.task {
+ 
+    background-color: #000000;
+
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 40px ), repeating-linear-gradient( #cfa4a455, #cfa4a4 );
+    box-shadow: 0 20px 10px 8px rgba(0, 0, 0, 0.5);
+    
+}
+
+.title{
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+.desc{
+    width: 100%;
+    border: 2px solid rgba(174, 212, 241, 0.996);
+    color: white;
+    padding: 20px;
+    font-weight:bold ;
+    backdrop-filter: blur(9px);
+}
+.date {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+.select-task,.end-task{
+    width: 100%;
+    border: 2px solid rgba(174, 212, 241, 0.996);
+    color: white;
+    padding: 20px;
+    font-weight:bold ;
+    backdrop-filter: blur(7px);
+    margin: 5px;
+}
+.status {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+.corcho{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/005/754/448/large_2x/corkboard-or-pinboard-or-bulletin-board-cork-background-in-wide-banner-or-header-format-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.chincheta{
+    background-color: #ff0303e6;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+.form{
+    background-color: #000000;
+    
+    padding: 40px;
+}
+.form input{
+    width: 100%;
+    border: 2px solid rgba(174, 212, 241, 0.996);
+    color: white;
+    padding: 20px;
+    font-weight:bold ;
+    backdrop-filter: blur(7px);
+    margin: 5px;
+}
+.form select {
+    width: 100%;
+    border: 2px solid rgba(174, 212, 241, 0.996);
+
+    padding: 20px;
+    font-weight:bold ;
+    backdrop-filter: blur(7px);
+    margin: 5px;
+}
+.form option{
+    width: 100%;
+    border: 2px solid rgba(174, 212, 241, 0.996);
+    color: rgb(11, 0, 0);
+    padding: 20px;
+    font-weight:bold ;
+    backdrop-filter: blur(7px);
+    margin: 5px;
+}
+.form h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+.form button{
+    width: 100%;
+    border: 2px solid rgba(174, 212, 241, 0.996);
+    color: white;
+    padding: 20px;
+    font-weight:bold ;
+    backdrop-filter: blur(7px);
+    margin: 5px;
+}
