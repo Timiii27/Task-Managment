@@ -1,4 +1,5 @@
 import React from 'react'
+import { toast } from 'react-hot-toast'
 import axios from 'axios'
 import SelectTask from '../components/selectTask'
 import CreateTask from '../components/createTask'
@@ -15,10 +16,9 @@ const tasks = () => {
         setTasks(res.data)
       })
       .catch(err => {
-        console.log(err)
+        toast.error(err.response.data.message)
       })
   }, [])
-  console.log(tasks)
   return (
     <div>
 
@@ -31,9 +31,8 @@ const tasks = () => {
                         <div className="flex flex-col items-center ">
                             <h2 className="title">{task.title}</h2>
                             <p className="desc">{task.description}</p>
-
-                            <p className="date">Created on: {/* formted date */ task.createdAt}</p>
-                            <p className="date">City Task : {/* formted date */ task.country}</p>
+                            <p className="date">Created on: {task.createdAt}</p>
+                            <p className="date">City Task : {task.country}</p>
                             <p className='status'>{task.taskStatus === 'todo' ? 'Waiting to be selected' : null}</p>
                             <div className="flex w-full ">
                             <button className='select-task' onClick={() => SelectTask(task._id)}>

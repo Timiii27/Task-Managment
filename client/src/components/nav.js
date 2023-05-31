@@ -12,7 +12,6 @@ const Nav = () => {
     <div>
     <nav className=" w-full bg-slate-900">
         <div className="flex items-center justify-between p-6 ">
-
             <a href="/tasks">Tasks</a>
             <a href="/myTasks">My Tasks</a>
             {token ? <a href="/" onClick={logout}>Logout</a> : <a href="/">Login</a> }
